@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clear::after {
+	content: "";
+	display: block;
+	clear: both;
+	width: 0;
+}
+
+input[type=text],
+select,
+textarea {
+	width: 450px;
+	height: 50px;
+	outline: none;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	padding-left: 10px;
+	font-size: 16px;
+}
+
+input[type=radio] {
+	width: 40px;
+	height: 35px;
+}
+
+#user-form>div {
+	margin-bottom: 20px;
+}
+
+#user-form>div>label {
+	width: 100px;
+	text-align: right;
+	display: inline-block;
+}
+
+#user-form>.sex>div>* {
+	vertical-align: middle;
+}
+
+#user-form>.sex>div:last-child {
+	margin-left: 20px;
+}
+
+#user-form textarea[name=description] {
+	height: 200px;
+}
+
+button {
+	outline: none;
+	cursor: pointer;
+	background-color: #ccc;
+	border: none;
+	padding: 10px 30px;
+	font-size: 16px;
+	/* color: #fff; */
+}
+
+#user-form div:last-child>button {
+	margin-right: 20px;
+}

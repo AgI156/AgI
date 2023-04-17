@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    /* background-color: rgb(255, 250, 232); */
+    background: url("../img/client1.jpg") bottom center;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 0;
+}
+
+.action > div {
+    float: left;
+}
+
+.display {
+    overflow-y: scroll;
+}
+
+.display > #tbl {
+    border-collapse: collapse;
+}
+
+.display > #tbl tr > td,
+.display > #tbl tr > th {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+}
+
+.display > #tbl > thead > tr {
+    background-color: rgba(1, 1, 1, 0.3);
+}
+
+.display > #tbl tr:nth-child(even) {
+    /*background-color: #8D8D8D;*/
+    background-color: rgba(4, 4, 4, 0.2);
+}
+
+.display > #tbl > tbody > tr:hover {
+    background-color: rgba(1, 1, 1, 0.3);
+}
+
+
+.paginate {
+    margin-top: 8px;
+}
+
+.jilu {
+    margin-left: 30px;
+}
+
+.paginate > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.paginate > ul > li {
+    float: left;
+    background-color: forestgreen;
+}
+
+.paginate > ul > li:hover {
+    background-color: pink;
+}
+
+.paginate > ul > li:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.paginate > ul > li:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.paginate > ul > li > a {
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    padding: 5px 8px;
+    color: #eee;
+    user-select: none;
+}
+
+.paginate > ul > li.active {
+    background-color: lightpink;
+}
+
+.action {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.action button {
+    padding: 10px 30px;
+    margin-right: 15px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: dimgray;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#del-btn {
+    background-color: red;
+}
+
+.search > form > div {
+    float: left;
+}
+
+.search input {
+    outline: none;
+    height: 35px;
+    width: 200px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+#age-from, #age-to {
+    width: 100px;
+}
+
+.search select {
+    outline: none;
+    height: 35px;
+    width: 100px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#add-btn > a {
+    color: #fff;
+    text-decoration: none;
+
+}
